@@ -1,0 +1,348 @@
+* {
+  font-family: Nunito;
+}
+.header-right {
+  display: flex;
+  justify-content: space-around;
+  .logo {
+    display: flex;
+    .logo-content {
+      margin-top: 21px;
+      margin-left: 11px;
+      font-weight: 700;
+      font-size: 30px;
+      color: #5e9ff9;
+    }
+  }
+
+  .navbar {
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      li {
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      li:hover {
+        border-bottom: 4px solid #5e9ff9;
+      }
+    }
+  }
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 8px;
+  .button-login {
+    button {
+      border-radius: 12px;
+      background-color: #0093f5;
+      border: 1px solid #0093f5;
+      padding: 0 20px;
+      width: 154px;
+      height: 44px;
+      color: #ffff;
+      box-shadow: 0px 3px 0.5px 0.2px #017ed2;
+    }
+  }
+  .button-register {
+    button {
+      border-radius: 12px;
+      padding: 0 20px;
+      width: 154px;
+      height: 44px;
+      border: 1px solid #a8aaae;
+      color: #a8aaae;
+      background-color: #ffff;
+      box-shadow: 0px 2px 0.5px 0.2px #a5a3ae99;
+    }
+  }
+}
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  .banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .banner-text {
+    width: 590px;
+    position: absolute;
+    left: 8%;
+    top: 30%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    .text-first {
+      color: #0093f5;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44.46px;
+      letter-spacing: 0.25px;
+    }
+    .text-second {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32.74px;
+      letter-spacing: 0%;
+      color: #212121;
+    }
+    button {
+      font-size: 18px;
+      width: 199px;
+      height: 44px;
+      gap: 8px;
+      border-radius: 12px;
+      padding-right: 20px;
+      padding-left: 20px;
+      box-shadow: 0px 3px 0.5px 0.2px #017ed2;
+      color: #ffff;
+      background-color: #0093f5;
+      border: 1px solid #0093f5;
+    }
+  }
+}
+
+.body-mct {
+  margin: 50px 0px;
+  .body-mct-title {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 37.34px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #0093f5;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+  }
+  .body-mct-img {
+    width: 624px;
+    height: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative; /* Để đặt hình trung tâm */
+
+    .img1,
+    .img2,
+    .img3,
+    .img4 {
+      width: 300px;
+      height: 310px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        //width: 400px;
+        //height: auto;
+      }
+    }
+
+    .img1 {
+      background-color: #64c8ff;
+      border-radius: 10px 0px 0px 0px;
+      img {
+        width: 375px;
+        height: auto;
+        top: 173px;
+        left: 110px;
+      }
+    }
+    .img2 {
+      background-color: #ffbe6e;
+      border-radius: 0px 10px 0px 0px;
+      img {
+        width: 425px;
+        height: auto;
+        top: 168px;
+        left: 120px;
+      }
+    }
+    .img3 {
+      background-color: #faa0b3;
+      border-radius: 0px 0px 0px 10px;
+      img {
+        width: 520px;
+        height: auto;
+        top: 175px;
+        left: 220px;
+      }
+    }
+    .img4 {
+      background-color: #aea2fd;
+      border-radius: 0px 0px 10px 0px;
+      img {
+        width: 465px;
+        height: auto;
+      }
+    }
+  }
+  /* Hình ở giữa */
+  .center-img {
+    width: 90px; /* Kích thước hình ở giữa */
+    height: 90px;
+    background-color: white; /* Màu nền trắng */
+    border-radius: 50%; /* Biến thành hình tròn */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Căn giữa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 63px; /* Kích thước icon bên trong */
+      height: 55px;
+    }
+  }
+}
+
+.body-mct-text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 16px;
+  details {
+    border: 1px solid #5e9ff9;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    .summary-text {
+      i {
+        color: #0093f5;
+      }
+    }
+  }
+
+  details[open] {
+    background-color: #eaf4ff;
+  }
+
+  .content {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+footer {
+  background-color: #eaf4ff;
+  width: 100%;
+  height: 469px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  .footer-Information {
+    margin: 0 125px;
+    padding-top: 113px;
+    gap: 120px;
+    .footer-Information-right {
+      .logo {
+        display: flex;
+        .logo-content {
+          margin-top: 21px;
+          margin-left: 11px;
+          font-weight: 700;
+          font-size: 30px;
+          color: #5e9ff9;
+        }
+      }
+      .footer-contact1 {
+        display: flex;
+        gap: 1px;
+        i {
+          width: 24px;
+          height: 24px;
+          color: #0093f5;
+        }
+        span {
+          align-items: center;
+        }
+      }
+    }
+    .footer-Information-middle {
+      display: flex;
+      flex-direction: column;
+      width: 170px;
+      gap: 16px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22.4px;
+      letter-spacing: 0.15px;
+      a {
+        text-decoration: none;
+        color: #212121;
+      }
+    }
+    .footer-Information-left {
+      display: flex;
+      gap: 16px;
+      .icon-facebook {
+        width: 40px;
+        height: 40px;
+        background-color: #1877f2;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          color: white;
+          font-size: 24px;
+        }
+      }
+      .icon-youtube {
+        width: 40px; /* Kích thước vòng tròn */
+        height: 40px;
+        background-color: #ff0000; /* Màu đỏ YouTube */
+        border-radius: 50%; /* Biến thành hình tròn */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          color: white; /* Màu trắng cho icon */
+          font-size: 24px; /* Kích thước icon */
+        }
+      }
+      .icon-tiktok {
+        width: 40px; /* Kích thước vòng tròn */
+        height: 40px;
+        background-color: #000; /* Màu đen TikTok */
+        border-radius: 50%; /* Biến thành hình tròn */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          color: white; /* Màu trắng cho icon */
+          font-size: 24px; /* Kích thước icon */
+        }
+      }
+    }
+  }
+  .footer-copyright {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.15px;
+    color: #212121;
+  }
+}
