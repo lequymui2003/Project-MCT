@@ -22,3 +22,19 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# Node.js dependencies
+node_modules/
+dist/
+
+# Build files
+.vite/
+*.log
+
+# IDE settings (VSCode, WebStorm)
+.vscode/
+.idea/
+
+# Environment variables
+.env
+.env.local
+
