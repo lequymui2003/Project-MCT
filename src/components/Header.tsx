@@ -1,6 +1,6 @@
-import '../App.scss';
-import { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import "../App.scss";
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +13,7 @@ function Header() {
           <div className="col-md-8 col-12">
             <div className="row align-items-center">
               <div className="col-4 col-md-3">
-                <img src="Logo.png" alt="Logo" className="logo" />
+                <img src="logo.png" alt="Logo" className="logo" />
               </div>
               {/* Navigation hiển thị trên desktop */}
               <div className="col-8 col-md-9 d-none d-md-block nav">
@@ -37,9 +37,17 @@ function Header() {
       {/* Icon Menu (chỉ hiển thị trên mobile) */}
       <div className="menu-icon-container d-md-none">
         {isOpen ? (
-          <FaTimes size={24} onClick={() => setIsOpen(false)} className="menu-icon" />
+          <FaTimes
+            size={24}
+            onClick={() => setIsOpen(false)}
+            className="menu-icon"
+          />
         ) : (
-          <FaBars size={24} onClick={() => setIsOpen(true)} className="menu-icon" />
+          <FaBars
+            size={24}
+            onClick={() => setIsOpen(true)}
+            className="menu-icon"
+          />
         )}
       </div>
 

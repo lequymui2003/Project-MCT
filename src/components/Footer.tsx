@@ -6,7 +6,7 @@ function Footer() {
         <div className="col-12 col-lg-3 col-xl-5 footer-Information-right">
           <div className="logo">
             <div>
-              <img src="Logo.png" alt="Logo" width="192px" height="94px" />
+              <img src="logo.png" alt="Logo" width="192px" height="94px" />
             </div>
             {/* <div className="logo-content">
               <span>MCT</span>
